@@ -5,23 +5,23 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categoria extends Model
+class ProductoImagen extends Model
 {
     use HasFactory;
 
-    protected $table = 'categorias';
-    protected $primaryKey = 'id_categoria';
+    protected $table = 'producto_imagenes';
+    protected $primaryKey = 'id_producto_imagen';
     public $timestamps = false;
 
     protected $fillable = [
-        'nombre',
+        'id_producto',
         'imagen_url',
         'estado_auditoria',
         'fecha_creacion_auditoria'
     ];
 
-    public function subcategorias()
+    public function producto()
     {
-        return $this->hasMany(Subcategoria::class, 'id_categoria', 'id_categoria');
+        return $this->belongsTo(Producto::class, 'id_producto', 'id_producto');
     }
 }
