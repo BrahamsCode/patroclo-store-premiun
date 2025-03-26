@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('marcas', function (Blueprint $table) {
             $table->id('id_marca');
             $table->string('nombre');
-            $table->string('codigo_pais')->nullable();
-            $table->string('logo_url')->nullable();
+            $table->string('codigo_pais');
+            $table->string('logo_url');
             $table->char('estado_auditoria', 1);
             $table->timestamp('fecha_creacion_auditoria');
         });

@@ -23,7 +23,7 @@ return new class extends Migration
             $table->float('precio_dolares');
             $table->integer('stock');
             $table->string('imagen_url');
-            $table->string('informacion_fabricante_url')->nullable();
+            $table->string('informacion_fabricante_url');
             $table->char('estado_auditoria', 1);
             $table->timestamp('fecha_creacion_auditoria');
 
