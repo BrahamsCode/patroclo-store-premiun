@@ -1,3 +1,6 @@
+# Realizado por :
+- Antony Brahams Paredes Paulino
+- link del vídeo : https://youtu.be/3juOxYx-EmY
 # patroclo-store-premiun
  Pagina Web con el curso de taller de programacion Web Laravel
 
