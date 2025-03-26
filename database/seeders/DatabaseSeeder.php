@@ -196,7 +196,7 @@ class DatabaseSeeder extends Seeder
                 'precio_dolares' => 499.99,
                 'stock' => 15,
                 'imagen_url' => Vite::asset('resources/img/sofamodular.png'),
-                'informacion_fabricante_url' => null,
+                'informacion_fabricante_url' => 'https://www.sofamodular.com',
                 'estado_auditoria' => 'A',
                 'fecha_creacion_auditoria' => now(),
             ],
